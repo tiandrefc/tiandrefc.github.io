@@ -7,12 +7,17 @@ h2 {
    top: 60px; 
    left: 60px; 
    width: 100%;
-	color: black;
+	color: white;
 	font-family: "Verdana", sans-serif;
 	font-weight: lighter;
 	font-size: 2.5em;
 }
-
+table
+{
+	position: absolute; 
+	top: 120px; 
+	left: 60px; 
+}
 p{
 	font-size:1.5em;
 	font-family: "Arial", sans-serif;
