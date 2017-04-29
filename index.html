@@ -9,56 +9,35 @@
 
 <body>
 
-<input type="button" name="answer" value="Manuel Castanheira + Teresa Castanheira" onclick="showDiv('manuel')" />
+<input type="button" id="inicio" value="Manuel Castanheira + Teresa Castanheira" onclick="showDiv('manuel');desc('Manuel Castanheira nasceu a e faleceu a. Casado com Teresa Caçador nascida a e falecida a')" />
 
 <div id="manuel"  style="display:none;" class="answer_list" >
-    <table>
-        <tr>
-            <td><ul><li>Data Nascimento://</li></ul></td>
-            <td><ul><li>Data Nascimento://</li></ul></td>
-        </tr>
-    </table>
-    <input type="button" name="answer" value="António Castanheira" onclick="showDiv('antonio')" />
-    <input type="button" name="answer" value="Maria Teresa" onclick="showDiv('teresa')" />
-    <input type="button" name="answer" value="Maria José" onclick="showDiv('maria_jose')" />
-    <input type="button" name="answer" value="Maria de Lurdes" onclick="showDiv('lurdes')" />
+    <input type="button" name="answer" value="António Castanheira" onclick="showDiv('antonio');desc('António Castanheira 17/02/1958-12/04/2017 foi casado com Iria Castanheira 19/12/')" />
+    <input type="button" name="answer" value="Maria Teresa" onclick="showDiv('teresa');desc('Maria Teresa Castanheira () é casada com Vasco Ferreira ()')" />
+    <input type="button" name="answer" value="Maria José" onclick="showDiv('maria_jose');desc('Maria José Castanheira () é casada com José Inês ()')" />
+    <input type="button" name="answer" value="Maria de Lurdes" onclick="desc('Maria de Lurdes Castanheira () é solteira')" />
 </div>
 
 <div id="antonio"  style="display:none;" class="answer_list" >
-    <table>
-        <tr>
-            <td><ul><li>Data Nascimento: 17/02/1958</li></ul></td>
-            <td><ul><li>Mulher: Iria Castanheira </li><li>Data de Nascimento: 19/12/</li></ul></td>
-        </tr>
-    </table>
-    <input type="button" name="answer" value="Tiago Castanheira" onclick="showDiv('tiago')" />
-    <input type="button" name="answer" value="André Castanheira" onclick="showDiv('andre')" />
-
+    <input type="button" name="answer" value="Tiago Castanheira" onclick="showDiv('tiago');desc('Tiago André Ferreira Castanheira (23/02/1994). Licenciado em Eng. Biomédica e Biofísica pela Faculdade de Ciências da Universidade de Lisboa e Mestre em  Eng.Biomédica pelo IST. Fundador do site')" />
+    <input type="button" name="answer" value="André Castanheira" onclick="showDiv('andre');desc('André Dinis Ferreira Castanheira (24/02/1997). MD pela Faculdade de Medicina da Universidade de Lisboa ')" />
 </div>
 
 <div id="teresa"  style="display:none;" class="answer_list" >
-    <table>
-        <tr>
-            <td><ul><li>Data Nascimento: </li></ul></td>
-            <td><ul><li>Marido: Vasco Ferreira</li><li>Data de Nascimento:</li></ul></td>
-        </tr>
-    </table>
-
     <input type="button" name="answer" value="João Ferreira" onclick="showDiv('joao')" />
     <input type="button" name="answer" value="Silvia Ferreira" onclick="showDiv('silvia')" />
     <input type="button" name="answer" value="Cátia Ferreira" onclick="showDiv('catia')" />
 </div>
 
 <div id="maria_jose"  style="display:none;" class="answer_list" >
-    <table>
-        <tr>
-            <td><ul><li>Data Nascimento: </li></ul></td>
-            <td><ul><li>Marido: José Inês</li><li>Data de Nascimento:</li></ul></td>
-        </tr>
-    </table>
-
     <input type="button" name="answer" value="Nelson Inês" onclick="showDiv('nelson')" />
     <input type="button" name="answer" value="Paulo Jorge Inês" onclick="showDiv('paulo')" />
 </div>
+
+
+
+<p id="texto"></p>
+
+
 </body>
 </html>
