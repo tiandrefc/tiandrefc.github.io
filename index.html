@@ -1,64 +1,64 @@
 <!DOCTYPE html>
-<html>
-	
-<link rel="stylesheet" type="text/css" href="styles.css"/>
-<title>Castanheiras</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="buttons.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
 <body>
 
-	
-  	<h2>Aniversários dos Castanheiras</h2>
-	<br>
- <table>
-	<tr>
-		<td>
-			<p>Mafalda Alexandra Carvalho Inês</p>
-		</td>
-		<td>
-			<p>18/01/2006</p>
-		</td>
-	</tr>
-	 <tr>
-		<td>
-			<p>Matilde Coelho Ferreira</p>
-		</td>
-		<td>
-			<p>x/x/x</p>
-		</td>
-	</tr>
-	 <tr>
-		<td>
-			<p>Maria Inês Coelho Ferreira</p>
-		</td>
-		<td>
-			<p>x/x/x</p>
-		</td>
-	</tr>
-	
-	<tr>
-		<td>
-			<p>Ema Ferreira Santos</p>
-		</td>
-		<td>
-			<p>13/01/2016</p>
-		</td>
-	</tr>
-	  <tr>
-		<td>
-			<p>Rafael Carvalho Inês</p>
-		</td>
-		<td>
-			<p>15/01/2016</p>
-		</td>
-	</tr>
-	 <tr>
-		<td>
-			<p>Francisco Ferreira Postiga</p>
-		</td>
-		<td>
-			<p>28/12/2016</p>
-		</td>
-	 </tr>
-	
-</table>	
+<input type="button" name="answer" value="Manuel Castanheira + Teresa Castanheira" onclick="showDiv('manuel')" />
+
+<div id="manuel"  style="display:none;" class="answer_list" >
+    <table>
+        <tr>
+            <td><ul><li>Data Nascimento://</li></ul></td>
+            <td><ul><li>Data Nascimento://</li></ul></td>
+        </tr>
+    </table>
+    <input type="button" name="answer" value="António Castanheira" onclick="showDiv('antonio')" />
+    <input type="button" name="answer" value="Maria Teresa" onclick="showDiv('teresa')" />
+    <input type="button" name="answer" value="Maria José" onclick="showDiv('maria_jose')" />
+    <input type="button" name="answer" value="Maria de Lurdes" onclick="showDiv('lurdes')" />
+</div>
+
+<div id="antonio"  style="display:none;" class="answer_list" >
+    <table>
+        <tr>
+            <td><ul><li>Data Nascimento: 17/02/1958</li></ul></td>
+            <td><ul><li>Mulher: Iria Castanheira </li><li>Data de Nascimento: 19/12/</li></ul></td>
+        </tr>
+    </table>
+    <input type="button" name="answer" value="Tiago Castanheira" onclick="showDiv('tiago')" />
+    <input type="button" name="answer" value="André Castanheira" onclick="showDiv('andre')" />
+
+</div>
+
+<div id="teresa"  style="display:none;" class="answer_list" >
+    <table>
+        <tr>
+            <td><ul><li>Data Nascimento: </li></ul></td>
+            <td><ul><li>Marido: Vasco Ferreira</li><li>Data de Nascimento:</li></ul></td>
+        </tr>
+    </table>
+
+    <input type="button" name="answer" value="João Ferreira" onclick="showDiv('joao')" />
+    <input type="button" name="answer" value="Silvia Ferreira" onclick="showDiv('silvia')" />
+    <input type="button" name="answer" value="Cátia Ferreira" onclick="showDiv('catia')" />
+</div>
+
+<div id="maria_jose"  style="display:none;" class="answer_list" >
+    <table>
+        <tr>
+            <td><ul><li>Data Nascimento: </li></ul></td>
+            <td><ul><li>Marido: José Inês</li><li>Data de Nascimento:</li></ul></td>
+        </tr>
+    </table>
+
+    <input type="button" name="answer" value="Nelson Inês" onclick="showDiv('nelson')" />
+    <input type="button" name="answer" value="Paulo Jorge Inês" onclick="showDiv('paulo')" />
+</div>
 </body>
 </html>
