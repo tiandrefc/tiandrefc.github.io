@@ -14,12 +14,15 @@ function showDiv(id) {
     }
 }
 
-function desc(texto) {
-    document.getElementById("texto").innerHTML = texto;
-}</script>
+function desc(p1,p2,bday,dday,url_photo, achievements, partner) {
+    document.getElementById("dates").innerHTML = p1 +' ('+ bday + ' - ' + dday + ')';
+
+    document.getElementById("data").innerHTML = achievements;
+}
+</script>
 <body>
 
-<input type="button" id="inicio" value="Manuel Castanheira + Teresa Castanheira" onclick="showDiv('manuel');desc('Manuel Castanheira nasceu a e faleceu a. Casado com Teresa Caçador nascida a e falecida a')" />
+<input type="button" id="inicio" value="Manuel Castanheira + Teresa Castanheira" onclick="showDiv('manuel');desc('Manuel Castanheira','Teresa Caçador Castanheira','x/xx/xxxx','x/x/xxxx','','Foi agricultor','Teresa Caçador')" />
 
 <div id="manuel"  style="display:none;" class="answer_list" >
     <input type="button" name="answer" value="António Castanheira" onclick="showDiv('antonio');desc('António Castanheira 17/02/1958-12/04/2017 foi casado com Iria Castanheira 19/12/')" />
@@ -55,7 +58,18 @@ function desc(texto) {
     <input type="button" name="answer" value="Ema Ferreira Santos" onclick="showDiv('ema')" />
 </div>
 
-<p id="texto"></p>
+<div id="texto">
+<table>
+	<tr>
+		<td id="photo" colspan="2"></td>
+		<td id="dates"></td>
+	</tr>
+	<tr>
+		
+		<td id="data"></td>
+	</tr>
+</table>
+</div>
 
 
 </body>
@@ -84,13 +98,13 @@ function desc(texto) {
 #teresa
 {
     position: absolute;
-    left: 26%;
+    left: 30%;
     top: 35%;
 }
 #maria_jose
 {
     position: absolute;
-    left: 55%;
+    left: 65%;
     top: 35%;
 }
 #joao
